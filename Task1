@@ -1,0 +1,85 @@
+/*This code converts temprature*/
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+void celsiusToFahrenheit(double celsius) {
+    double fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+    cout << fixed << setprecision(2);
+    cout << celsius << " C = " << fahrenheit << " F" << endl;
+}
+
+void fahrenheitToCelsius(double fahrenheit) {
+    double celsius = (fahrenheit - 32.0) * 5.0 / 9.0;
+    cout << fixed << setprecision(2);
+    cout << fahrenheit << " F = " << celsius << " C" << endl;
+}
+
+void celsiusToKelvin(double celsius) {
+    double kelvin = celsius + 273.15;
+    cout << fixed << setprecision(2);
+    cout << celsius << " C = " << kelvin << " K" << endl;
+}
+
+void kelvinToCelsius(double kelvin) {
+    double celsius = kelvin - 273.15;
+    cout << fixed << setprecision(2);
+    cout << kelvin << " K = " << celsius << " C" << endl;
+}
+
+void fahrenheitToKelvin(double fahrenheit) {
+    double kelvin = (fahrenheit - 32.0) * 5.0 / 9.0 + 273.15;
+    cout << fixed << setprecision(2);
+    cout << fahrenheit << " F = " << kelvin << " K" << endl;
+}
+
+void kelvinToFahrenheit(double kelvin) {
+    double fahrenheit = (kelvin - 273.15) * 9.0 / 5.0 + 32.0;
+    cout << fixed << setprecision(2);
+    cout << kelvin << " K = " << fahrenheit << " F" << endl;
+}
+
+int main() {
+    double value;
+    int choice;
+    
+    cout << "Choose a conversion:\n";
+    cout << "1. Celsius to Fahrenheit\n";
+    cout << "2. Fahrenheit to Celsius\n";
+    cout << "3. Celsius to Kelvin\n";
+    cout << "4. Kelvin to Celsius\n";
+    cout << "5. Fahrenheit to Kelvin\n";
+    cout << "6. Kelvin to Fahrenheit\n";
+    cout << "Enter your choice: ";
+    cin >> choice;
+    
+    cout << "Enter the temperature value: ";
+    cin >> value;
+    
+    switch (choice) {
+        case 1:
+            celsiusToFahrenheit(value);
+            break;
+        case 2:
+            fahrenheitToCelsius(value);
+            break;
+        case 3:
+            celsiusToKelvin(value);
+            break;
+        case 4:
+            kelvinToCelsius(value);
+            break;
+        case 5:
+            fahrenheitToKelvin(value);
+            break;
+        case 6:
+            kelvinToFahrenheit(value);
+            break;
+        default:
+            cout << "Invalid choice!" << endl;
+            break;
+    }
+
+    return 0;
+}
