@@ -11,7 +11,8 @@ Duration : September to November 2024
 Mentor : Neela Santhosh Kumar
 
 Project Overview: Temperature Conversion Program
-1.** Objective**
+
+1.Objective
 Utility: To create a simple program that converts temperatures between Celsius, Fahrenheit, and Kelvin.
 User Convenience: To provide an easy-to-use interface for users to perform temperature conversions quickly and accurately.
 Educational Tool: To serve as a learning resource for understanding temperature scales and their relationships.
